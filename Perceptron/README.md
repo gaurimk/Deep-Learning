@@ -26,29 +26,29 @@ It adjusts model weights based on prediction errors until the classifier converg
 
 The Perceptron updates weights using:
 
-\[
-w_{new} = w_{old} + \eta \cdot (y - \hat{y}) \cdot x
-\]
+$$
+w_{new} = w_{old} + \eta (y - \hat{y})x
+$$
 
 Where:
 
 | Symbol | Meaning |
 |--------|---------|
-| \( w \) | Weight vector |
-| \( \eta \) | Learning rate |
-| \( y \) | True label |
-| \( \hat{y} \) | Predicted label |
-| \( x \) | Input vector |
+| $w$ | Weight vector |
+| $\eta$ | Learning rate |
+| $y$ | True label |
+| $\hat{y}$ | Predicted label |
+| $x$ | Input vector |
 
 Activation Function:
 
-\[
+$$
 \hat{y} =
-  \begin{cases}
-    1 & \text{if } (w \cdot x + b) \ge 0 \\
-    0 & \text{otherwise}
-  \end{cases}
-\]
+\begin{cases}
+1 & \text{if } (w \cdot x + b) \ge 0 \\
+0 & \text{otherwise}
+\end{cases}
+$$
 
 ---
 
